@@ -1,0 +1,12 @@
+name: 'career front view'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - system
+  - user
+  - views
+  - views_field_view
+  - webform
+  - webform_views
+package: 'Career View'

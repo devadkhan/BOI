@@ -1,0 +1,5 @@
+name: 'boi_ccg'
+type: module
+description: 'BOI country and crieteria graph'
+core: 8.x
+package: 'Custom'

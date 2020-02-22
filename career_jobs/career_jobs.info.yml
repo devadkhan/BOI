@@ -1,0 +1,17 @@
+name: Career
+description: 'Provides Career content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - captcha
+  - datetime
+  - field
+  - language
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
+core_incompatible: false

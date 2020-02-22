@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carrier_date
+    - node.type.career_jobs
+  module:
+    - datetime
+id: node.career_jobs.field_carrier_date
+field_name: field_carrier_date
+entity_type: node
+bundle: career_jobs
+label: 'Last date to Apply'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carrier_time
+    - node.type.career_jobs
+id: node.career_jobs.field_carrier_time
+field_name: field_carrier_time
+entity_type: node
+bundle: career_jobs
+label: 'Carrier Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

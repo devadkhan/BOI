@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.career_jobs.body
+    - field.field.node.career_jobs.field_carrier_date
+    - field.field.node.career_jobs.field_carrier_time
+    - field.field.node.career_jobs.field_job_type
+    - field.field.node.career_jobs.field_sector_body
+    - node.type.career_jobs
+  module:
+    - text
+    - user
+id: node.career_jobs.teaser
+targetEntityType: node
+bundle: career_jobs
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_carrier_date: true
+  field_carrier_time: true
+  field_job_type: true
+  field_sector_body: true
+  langcode: true

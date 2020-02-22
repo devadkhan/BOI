@@ -1,0 +1,8 @@
+
+boi_ccg.country_crieteria_graph_controller_benchmark:
+  path: 'compare-pakistan'
+  defaults:
+    _controller: '\Drupal\boi_ccg\Controller\CountryCrieteriaGraphController::benchmark'
+    _title: 'Compare Pakistan'
+  requirements:
+    _permission: 'access content'

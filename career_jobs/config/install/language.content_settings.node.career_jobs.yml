@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_jobs
+id: node.career_jobs
+target_entity_type_id: node
+target_bundle: career_jobs
+default_langcode: site_default
+language_alterable: false

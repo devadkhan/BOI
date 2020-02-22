@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.career_form_result
+  module:
+    - system
+    - views
+  theme:
+    - boi_theme
+id: views_block__career_form_result_academic_info
+theme: boi_theme
+region: content_center
+weight: -83
+provider: null
+plugin: 'views_block:career_form_result-academic_info'
+settings:
+  id: 'views_block:career_form_result-academic_info'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/career-form-resultt/*'
+    negate: false
+    context_mapping: {  }

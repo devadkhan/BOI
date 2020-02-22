@@ -1,0 +1,5 @@
+name: 'boi_search_path_alter'
+type: module
+description: 'Module for altering Search result URL based on Bundle'
+core: 8.x
+package: 'BOI'

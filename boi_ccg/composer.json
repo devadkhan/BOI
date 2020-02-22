@@ -1,0 +1,14 @@
+{
+  "name": "drupal/boi_ccg",
+  "type": "drupal-module",
+  "description": "BOI country and crieteria graph",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/boi_ccg",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/boi_ccg",
+    "source": "http://cgit.drupalcode.org/boi_ccg"
+  },
+  "require": { }
+}

@@ -1,0 +1,56 @@
+<?php
+/**
+ * @file
+ * Contains boi_ccg.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_help().
+ */
+function boi_ccg_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+            // Main module help for the boi_ccg module.
+        case 'help.page.boi_ccg':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('BOI country and crieteria graph') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function boi_ccg_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+     if($form['#id'] == 'views-exposed-form-newsletter-page-3') {
+       //  $options = $form['field_date__value']['#options'];
+       //  //unset($options['All']);
+       //  $options['All'] =  t('Year');
+       // // kint($options);exit;
+       //  $form['field_date__value']['#options'] = $options;
+        $form['field_date__value']['#options']['All'] = t('Select Year');
+       // echo"<pre>"; print_r($form['field_date__value']['#options']);exit;
+  }
+ 
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function boi_ccg_theme() {
+    return [
+        'boi_ccg' => [
+            'render element' => 'children',
+            'variables' => array(
+                'data' => NULL,
+            ),
+        ],
+    ];
+}
+

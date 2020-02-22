@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_jobs
+id: node.career_jobs.title
+field_name: title
+entity_type: node
+bundle: career_jobs
+label: 'Job Designation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
